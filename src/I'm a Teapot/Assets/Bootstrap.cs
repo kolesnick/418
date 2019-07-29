@@ -8,7 +8,7 @@ namespace ImATeapot
     {
         private Systems systems;
 
-        private void Awake() => systems = new Feature();
+        private void Awake() => systems = new SimulationFeature(Contexts.sharedInstance.game);
 
         private void Start() => systems.Initialize();
 
