@@ -1,4 +1,5 @@
 *.userproperties
+_ReSharper.Caches
 
 
 # Created by https://www.gitignore.io/api/unity
