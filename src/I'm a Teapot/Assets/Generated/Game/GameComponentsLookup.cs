@@ -8,15 +8,21 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int Timeout = 0;
+    public const int Employee = 0;
+    public const int Thirsty = 1;
+    public const int Timeout = 2;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 3;
 
     public static readonly string[] componentNames = {
+        "Employee",
+        "Thirsty",
         "Timeout"
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(Employee),
+        typeof(Thirsty),
         typeof(Timeout)
     };
 }
