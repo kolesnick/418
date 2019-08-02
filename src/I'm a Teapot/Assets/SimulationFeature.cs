@@ -4,7 +4,7 @@ namespace ImATeapot
 {
     internal class SimulationFeature : Feature
     {
-        public SimulationFeature(GameContext game)
+        public SimulationFeature(GameContext game, StatisticsContext statistics)
         {
             Add(new CreateEmployees(game, count: 10));
 
@@ -16,6 +16,8 @@ namespace ImATeapot
             Add(new MakeEmployeeThirstyIfNoTimeout(game));
 
             Add(new GetThirstyEmployeeToKitchen(game));
+
+            Add(new CountEmployeeWaitTimeAtKitchen(game, statistics));
         }
     }
 }
