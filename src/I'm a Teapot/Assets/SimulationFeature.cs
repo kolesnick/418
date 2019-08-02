@@ -6,6 +6,7 @@ namespace ImATeapot
     {
         public SimulationFeature(GameContext game, StatisticsContext statistics)
         {
+            Add(new CreateTeapots(game, count: 2));
             Add(new CreateEmployees(game, count: 10));
 
             Add(new SetRandomTimeoutToNotThirstyEmployee(game));

@@ -11,4 +11,6 @@ public class Employee : IComponent { }
 public class Thirsty : IComponent { }
 public class AtKitchen : IComponent { }
 
+public class Teapot : IComponent { }
+
 [Statistics] [Unique] public class CumulativeWaitTime : IComponent { public float value; public override string ToString() => $"Cumulative Wait Time: {TimeSpan.FromMinutes(value):d\\.hh\\:mm}"; }

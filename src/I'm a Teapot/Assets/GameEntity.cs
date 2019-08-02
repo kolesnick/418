@@ -3,9 +3,11 @@
 public sealed partial class GameEntity
 {
     public override string ToString() =>
-        isEmployee
-            ? $"{nameof(Employee)} [ {FormatComponentsExcept(nameof(Employee))} ]"
-            : base.ToString();
+        isTeapot
+            ? $"{nameof(Teapot)} [ {FormatComponentsExcept(nameof(Teapot))} ]"
+            : isEmployee
+                ? $"{nameof(Employee)} [ {FormatComponentsExcept(nameof(Employee))} ]"
+                : base.ToString();
 
     private string FormatComponentsExcept(string component) =>
         GetComponents()
