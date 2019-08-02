@@ -11,5 +11,5 @@ public sealed partial class GameEntity
         GetComponents()
             .Select(x => x.ToString())
             .Except(new [] { component })
-            .Aggregate((x, y) => $"{x}, {y}");
+            .Aggregate("", (x, y) => x == "" ? y : $"{x}, {y}");
 }
