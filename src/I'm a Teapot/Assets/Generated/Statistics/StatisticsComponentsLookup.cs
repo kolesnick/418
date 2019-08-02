@@ -9,14 +9,17 @@
 public static class StatisticsComponentsLookup {
 
     public const int CumulativeWaitTime = 0;
+    public const int WorkTime = 1;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 2;
 
     public static readonly string[] componentNames = {
-        "CumulativeWaitTime"
+        "CumulativeWaitTime",
+        "WorkTime"
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(CumulativeWaitTime)
+        typeof(CumulativeWaitTime),
+        typeof(WorkTime)
     };
 }

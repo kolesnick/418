@@ -18,6 +18,7 @@ namespace ImATeapot
 
             Add(new GetThirstyEmployeeToKitchen(game));
 
+            Add(new IncreaseWorkTime(statistics));
             Add(new CountEmployeeWaitTimeAtKitchen(game, statistics));
         }
     }

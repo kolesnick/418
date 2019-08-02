@@ -16,8 +16,9 @@ namespace ImATeapot {
         {
             for (int index = 0; index < teapotCount; index++)
             {
-                var employee = game.CreateEntity();
-                employee.isTeapot = true;
+                var teapot = game.CreateEntity();
+                teapot.isTeapot = true;
+                teapot.AddTemperature(0);
             }
         }
     }

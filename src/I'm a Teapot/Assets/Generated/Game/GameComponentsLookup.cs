@@ -11,15 +11,17 @@ public static class GameComponentsLookup {
     public const int AtKitchen = 0;
     public const int Employee = 1;
     public const int Teapot = 2;
-    public const int Thirsty = 3;
-    public const int Timeout = 4;
+    public const int Temperature = 3;
+    public const int Thirsty = 4;
+    public const int Timeout = 5;
 
-    public const int TotalComponents = 5;
+    public const int TotalComponents = 6;
 
     public static readonly string[] componentNames = {
         "AtKitchen",
         "Employee",
         "Teapot",
+        "Temperature",
         "Thirsty",
         "Timeout"
     };
@@ -28,6 +30,7 @@ public static class GameComponentsLookup {
         typeof(AtKitchen),
         typeof(Employee),
         typeof(Teapot),
+        typeof(Temperature),
         typeof(Thirsty),
         typeof(Timeout)
     };
