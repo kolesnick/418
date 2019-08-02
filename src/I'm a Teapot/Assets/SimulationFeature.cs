@@ -4,6 +4,8 @@
     {
         public SimulationFeature(GameContext game)
         {
+            Add(new CreateEmployees(game, count: 10));
+
             Add(new SetRandomTimeoutToNotThirstyEmployee(game));
 
             Add(new ReduceTimeout(game));
