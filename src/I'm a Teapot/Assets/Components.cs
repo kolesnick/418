@@ -7,3 +7,4 @@ public class Timeout : IComponent { public float value; public override string T
 
 public class Employee : IComponent { }
 public class Thirsty : IComponent { }
+public class AtKitchen : IComponent { }

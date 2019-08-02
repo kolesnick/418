@@ -1,4 +1,6 @@
-﻿namespace ImATeapot
+﻿using System;
+
+namespace ImATeapot
 {
     internal class SimulationFeature : Feature
     {
@@ -12,6 +14,8 @@
             Add(new RemoveTimeoutIfZero(game));
 
             Add(new MakeEmployeeThirstyIfNoTimeout(game));
+
+            Add(new GetThirstyEmployeeToKitchen(game));
         }
     }
 }
