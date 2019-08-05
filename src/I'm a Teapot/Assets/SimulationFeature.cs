@@ -4,8 +4,11 @@ namespace ImATeapot
 {
     internal class SimulationFeature : Feature
     {
-        public SimulationFeature(GameContext game, StatisticsContext statistics)
+        public SimulationFeature(GameContext game, SettingsContext settings, StatisticsContext statistics)
         {
+            Add(new SetInitialTimeScale(settings, timeScale: 1));
+            Add(new ApplyTimeScale(settings));
+
             Add(new CreateTeapots(game, count: 2));
             Add(new CreateEmployees(game, count: 10));
 

@@ -22,12 +22,14 @@ public partial class Contexts : Entitas.IContexts {
     static Contexts _sharedInstance;
 
     public GameContext game { get; set; }
+    public SettingsContext settings { get; set; }
     public StatisticsContext statistics { get; set; }
 
-    public Entitas.IContext[] allContexts { get { return new Entitas.IContext [] { game, statistics }; } }
+    public Entitas.IContext[] allContexts { get { return new Entitas.IContext [] { game, settings, statistics }; } }
 
     public Contexts() {
         game = new GameContext();
+        settings = new SettingsContext();
         statistics = new StatisticsContext();
 
         var postConstructors = System.Linq.Enumerable.Where(
@@ -64,6 +66,7 @@ public partial class Contexts {
     public void InitializeContextObservers() {
         try {
             CreateContextObserver(game);
+            CreateContextObserver(settings);
             CreateContextObserver(statistics);
         } catch(System.Exception) {
         }

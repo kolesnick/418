@@ -14,5 +14,7 @@ public class AtKitchen : IComponent { }
 public class Teapot : IComponent { }
 public class Temperature : IComponent { public float value; public override string ToString() => $"{value:F0}°"; }
 
+[Settings] [Unique] public class TimeScale : IComponent { public float value; public override string ToString() => $"Time Scale: x{value:F1}"; }
+
 [Statistics] [Unique] public class WorkTime : IComponent { public float value; public override string ToString() => $"Work Time: {TimeSpan.FromMinutes(value):d\\.hh\\:mm}"; }
 [Statistics] [Unique] public class CumulativeWaitTime : IComponent { public float value; public override string ToString() => $"Cumulative Wait Time: {TimeSpan.FromMinutes(value):d\\.hh\\:mm}"; }

@@ -12,6 +12,7 @@ namespace ImATeapot
             systems =
                 new SimulationFeature(
                     Contexts.sharedInstance.game,
+                    Contexts.sharedInstance.settings,
                     Contexts.sharedInstance.statistics);
 
         private void Start() => systems.Initialize();
