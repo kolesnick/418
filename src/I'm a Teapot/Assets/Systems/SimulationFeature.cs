@@ -11,7 +11,7 @@ namespace ImATeapot.Systems
             Add(new ApplyTimeScale(settings));
 
             Add(new CreateTeapots(game, count: 2));
-            Add(new CreateEmployees(game, count: 10));
+            Add(new CreateEmployees(game, count: 40));
 
             Add(new MarkEmptyTeapot(game));
             Add(new MarkFullTeapot(game));
@@ -32,7 +32,7 @@ namespace ImATeapot.Systems
             Add(new FillTeapot(game));
             Add(new HeatTeapot(game));
 
-            Add(new StartFillingEmptyTeapotIfThirsty(game));
+            Add(new StartFillingEmptyTeapotIfThirstyAndNoFilledTeapots(game));
             Add(new StopFillingFullTeapot(game));
 
             Add(new StartHeatingNotHotTeapot(game));
