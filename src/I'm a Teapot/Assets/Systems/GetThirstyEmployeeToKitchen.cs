@@ -1,6 +1,7 @@
 ﻿using Entitas;
 
-namespace ImATeapot {
+namespace ImATeapot.Systems
+{
     internal class GetThirstyEmployeeToKitchen : IExecuteSystem
     {
         private readonly IGroup<GameEntity> employees;

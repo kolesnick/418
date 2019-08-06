@@ -1,7 +1,7 @@
 ﻿using Entitas;
 using UnityEngine;
 
-namespace ImATeapot
+namespace ImATeapot.Systems
 {
     internal class SetRandomTimeoutToNotThirstyEmployee : IExecuteSystem
     {

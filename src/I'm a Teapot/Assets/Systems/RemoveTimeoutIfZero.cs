@@ -1,6 +1,6 @@
 ﻿using Entitas;
 
-namespace ImATeapot
+namespace ImATeapot.Systems
 {
     internal class RemoveTimeoutIfZero : IExecuteSystem
     {

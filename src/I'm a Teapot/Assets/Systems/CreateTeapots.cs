@@ -1,6 +1,7 @@
 ﻿using Entitas;
 
-namespace ImATeapot {
+namespace ImATeapot.Systems
+{
     internal class CreateTeapots : IInitializeSystem
     {
         private readonly GameContext game;
@@ -19,6 +20,8 @@ namespace ImATeapot {
                 var teapot = game.CreateEntity();
                 teapot.isTeapot = true;
                 teapot.AddTemperature(0);
+                teapot.AddCapacity(6);
+                teapot.AddAmount(0);
             }
         }
     }

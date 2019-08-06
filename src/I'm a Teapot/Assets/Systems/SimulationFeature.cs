@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ImATeapot
+﻿namespace ImATeapot.Systems
 {
     internal class SimulationFeature : Feature
     {

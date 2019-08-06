@@ -13,6 +13,8 @@ public class AtKitchen : IComponent { }
 
 public class Teapot : IComponent { }
 public class Temperature : IComponent { public float value; public override string ToString() => $"{value:F0}°"; }
+public class Capacity : IComponent { public float value; }
+public class Amount : IComponent { public float value; }
 
 [Settings] [Unique] public class TimeScale : IComponent { public float value; public override string ToString() => $"Time Scale: x{value:F1}"; }
 

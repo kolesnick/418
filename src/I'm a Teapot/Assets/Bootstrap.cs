@@ -1,12 +1,11 @@
-﻿using System;
-using Entitas;
+﻿using ImATeapot.Systems;
 using UnityEngine;
 
 namespace ImATeapot
 {
     public class Bootstrap : MonoBehaviour
     {
-        private Systems systems;
+        private Entitas.Systems systems;
 
         private void Awake() =>
             systems =
