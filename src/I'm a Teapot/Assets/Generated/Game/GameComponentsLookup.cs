@@ -10,21 +10,29 @@ public static class GameComponentsLookup {
 
     public const int Amount = 0;
     public const int AtKitchen = 1;
-    public const int Capacity = 2;
-    public const int Employee = 3;
-    public const int Teapot = 4;
-    public const int Temperature = 5;
-    public const int Thirsty = 6;
-    public const int Timeout = 7;
-    public const int Working = 8;
+    public const int BeingFilled = 2;
+    public const int Capacity = 3;
+    public const int Employee = 4;
+    public const int Empty = 5;
+    public const int FillingTeapot = 6;
+    public const int Full = 7;
+    public const int Teapot = 8;
+    public const int Temperature = 9;
+    public const int Thirsty = 10;
+    public const int Timeout = 11;
+    public const int Working = 12;
 
-    public const int TotalComponents = 9;
+    public const int TotalComponents = 13;
 
     public static readonly string[] componentNames = {
         "Amount",
         "AtKitchen",
+        "BeingFilled",
         "Capacity",
         "Employee",
+        "Empty",
+        "FillingTeapot",
+        "Full",
         "Teapot",
         "Temperature",
         "Thirsty",
@@ -35,8 +43,12 @@ public static class GameComponentsLookup {
     public static readonly System.Type[] componentTypes = {
         typeof(Amount),
         typeof(AtKitchen),
+        typeof(BeingFilled),
         typeof(Capacity),
         typeof(Employee),
+        typeof(Empty),
+        typeof(FillingTeapot),
+        typeof(Full),
         typeof(Teapot),
         typeof(Temperature),
         typeof(Thirsty),
