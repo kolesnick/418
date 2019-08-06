@@ -22,6 +22,9 @@ namespace ImATeapot.Systems
                 float temperatureIncrease = DeltaTime * HeatSpeed / teapot.amount.value;
 
                 teapot.ReplaceTemperature(teapot.temperature.value + temperatureIncrease);
+
+                if (teapot.temperature.value > 100)
+                    teapot.ReplaceTemperature(100);
             }
         }
     }

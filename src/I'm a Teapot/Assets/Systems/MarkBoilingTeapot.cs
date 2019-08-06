@@ -8,7 +8,7 @@ namespace ImATeapot.Systems
 
         public MarkBoilingTeapot(GameContext game) =>
             teapots = game.GetGroup(GameMatcher
-                .AllOf(GameMatcher.Teapot, GameMatcher.Temperature, GameMatcher.Heating));
+                .AllOf(GameMatcher.Teapot, GameMatcher.Temperature));
 
         public void Execute()
         {

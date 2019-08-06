@@ -38,6 +38,8 @@ namespace ImATeapot.Systems
             Add(new StartHeatingNotHotTeapot(game));
             Add(new StopHeatingBoilingTeapot(game));
 
+            Add(new CoolTeapot(game));
+
             Add(new IncreaseWorkTime(statistics));
             Add(new CountEmployeeWaitTimeAtKitchen(game, statistics));
         }
