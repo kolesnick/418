@@ -1,4 +1,5 @@
-﻿using Entitas;
+﻿using System.Linq;
+using Entitas;
 
 namespace ImATeapot.Systems
 {
@@ -20,7 +21,7 @@ namespace ImATeapot.Systems
 
         public void Execute()
         {
-            foreach (var (teapot, employee) in (teapots, employees).Zip())
+            foreach (var (teapot, employee) in (teapots, employees).Zip().ToList())
             {
                 employee.isFillingTeapot = true;
                 teapot.isBeingFilled = true;
