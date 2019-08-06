@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace ImATeapot.Systems
@@ -27,6 +26,7 @@ namespace ImATeapot.Systems
             Add(new MakeEmployeeThirstyIfNoTimeout(game));
 
             Add(new GetThirstyEmployeeToKitchen(game));
+            Add(new DrinkHotTea(game));
             Add(new GetNotThirstyEmployeeBackToWork(game));
 
             Add(new FillTeapot(game));
