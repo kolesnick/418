@@ -18,6 +18,7 @@
             Add(new MakeEmployeeThirstyIfNoTimeout(game));
 
             Add(new GetThirstyEmployeeToKitchen(game));
+            Add(new GetNotThirstyEmployeeBackToWork(game));
 
             Add(new IncreaseWorkTime(statistics));
             Add(new CountEmployeeWaitTimeAtKitchen(game, statistics));
