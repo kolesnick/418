@@ -16,6 +16,8 @@ namespace ImATeapot.Systems
 
             Add(new MarkEmptyTeapot(game));
             Add(new MarkFullTeapot(game));
+            Add(new MarkHotTeapot(game));
+            Add(new MarkBoilingTeapot(game));
 
             Add(new SetRandomTimeoutToNotThirstyEmployee(game));
 
@@ -28,9 +30,13 @@ namespace ImATeapot.Systems
             Add(new GetNotThirstyEmployeeBackToWork(game));
 
             Add(new FillTeapot(game));
+            Add(new HeatTeapot(game));
 
             Add(new StartFillingEmptyTeapotIfThirsty(game));
             Add(new StopFillingFullTeapot(game));
+
+            Add(new StartHeatingNotHotTeapot(game));
+            Add(new StopHeatingBoilingTeapot(game));
 
             Add(new IncreaseWorkTime(statistics));
             Add(new CountEmployeeWaitTimeAtKitchen(game, statistics));

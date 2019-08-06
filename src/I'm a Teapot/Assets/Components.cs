@@ -20,6 +20,9 @@ public class Amount : IComponent { public float value; }
 public class Empty : IComponent { }
 public class Full : IComponent { }
 public class BeingFilled : IComponent { }
+public class Heating : IComponent { }
+public class Hot : IComponent { }
+public class Boiling : IComponent { }
 
 [Settings] [Unique] public class TimeScale : IComponent { public float value; public override string ToString() => $"Time Scale: x{value:F1}"; }
 

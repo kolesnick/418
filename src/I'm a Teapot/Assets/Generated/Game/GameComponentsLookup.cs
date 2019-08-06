@@ -11,28 +11,34 @@ public static class GameComponentsLookup {
     public const int Amount = 0;
     public const int AtKitchen = 1;
     public const int BeingFilled = 2;
-    public const int Capacity = 3;
-    public const int Employee = 4;
-    public const int Empty = 5;
-    public const int FillingTeapot = 6;
-    public const int Full = 7;
-    public const int Teapot = 8;
-    public const int Temperature = 9;
-    public const int Thirsty = 10;
-    public const int Timeout = 11;
-    public const int Working = 12;
+    public const int Boiling = 3;
+    public const int Capacity = 4;
+    public const int Employee = 5;
+    public const int Empty = 6;
+    public const int FillingTeapot = 7;
+    public const int Full = 8;
+    public const int Heating = 9;
+    public const int Hot = 10;
+    public const int Teapot = 11;
+    public const int Temperature = 12;
+    public const int Thirsty = 13;
+    public const int Timeout = 14;
+    public const int Working = 15;
 
-    public const int TotalComponents = 13;
+    public const int TotalComponents = 16;
 
     public static readonly string[] componentNames = {
         "Amount",
         "AtKitchen",
         "BeingFilled",
+        "Boiling",
         "Capacity",
         "Employee",
         "Empty",
         "FillingTeapot",
         "Full",
+        "Heating",
+        "Hot",
         "Teapot",
         "Temperature",
         "Thirsty",
@@ -44,11 +50,14 @@ public static class GameComponentsLookup {
         typeof(Amount),
         typeof(AtKitchen),
         typeof(BeingFilled),
+        typeof(Boiling),
         typeof(Capacity),
         typeof(Employee),
         typeof(Empty),
         typeof(FillingTeapot),
         typeof(Full),
+        typeof(Heating),
+        typeof(Hot),
         typeof(Teapot),
         typeof(Temperature),
         typeof(Thirsty),
