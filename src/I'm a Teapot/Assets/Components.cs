@@ -8,6 +8,7 @@ using Entitas.CodeGeneration.Attributes;
 public class Timeout : IComponent { public float value; public override string ToString() => $"{TimeSpan.FromMinutes(value):h\\:mm}"; }
 
 public class Employee : IComponent { }
+public class Working : IComponent { }
 public class Thirsty : IComponent { }
 public class AtKitchen : IComponent { }
 

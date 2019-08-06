@@ -19,6 +19,7 @@ namespace ImATeapot.Systems
             {
                 var employee = game.CreateEntity();
                 employee.isEmployee = true;
+                employee.isWorking = true;
             }
         }
     }

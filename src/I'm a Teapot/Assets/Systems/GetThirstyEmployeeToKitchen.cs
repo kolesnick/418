@@ -13,7 +13,10 @@ namespace ImATeapot.Systems
         public void Execute()
         {
             foreach (var employee in employees)
+            {
+                employee.isWorking = false;
                 employee.isAtKitchen = true;
+            }
         }
     }
 }

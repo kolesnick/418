@@ -16,8 +16,9 @@ public static class GameComponentsLookup {
     public const int Temperature = 5;
     public const int Thirsty = 6;
     public const int Timeout = 7;
+    public const int Working = 8;
 
-    public const int TotalComponents = 8;
+    public const int TotalComponents = 9;
 
     public static readonly string[] componentNames = {
         "Amount",
@@ -27,7 +28,8 @@ public static class GameComponentsLookup {
         "Teapot",
         "Temperature",
         "Thirsty",
-        "Timeout"
+        "Timeout",
+        "Working"
     };
 
     public static readonly System.Type[] componentTypes = {
@@ -38,6 +40,7 @@ public static class GameComponentsLookup {
         typeof(Teapot),
         typeof(Temperature),
         typeof(Thirsty),
-        typeof(Timeout)
+        typeof(Timeout),
+        typeof(Working)
     };
 }
