@@ -8,6 +8,7 @@ namespace ImATeapot.Systems
         public SimulationFeature(GameContext game, SettingsContext settings, StatisticsContext statistics)
         {
             Add(new SetInitialTimeScale(settings, timeScale: 1));
+            Add(new CorrectTooSmallTimeScale(settings));
             Add(new ApplyTimeScale(settings));
 
             Add(new CreateTeapots(game, count: 2));
