@@ -1,4 +1,5 @@
 ﻿using Entitas;
+using UnityEngine;
 
 namespace ImATeapot.Systems
 {
@@ -20,6 +21,7 @@ namespace ImATeapot.Systems
                 var employee = game.CreateEntity();
                 employee.isEmployee = true;
                 employee.isWorking = true;
+                employee.AddTimeout(Random.Range(0f, 2f) * 60);
             }
         }
     }
