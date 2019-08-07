@@ -30,7 +30,7 @@ namespace ImATeapot.Systems
 
         public void Execute()
         {
-            foreach (var (teapot, employee) in (emptyTeapots, employees).Zip().ToList())
+            foreach (var (teapot, employee) in (emptyTeapots.Shuffle(), employees).Zip().ToList())
                 if (filledTeapots.count == 0 && fillingTeapots.count == 0)
                 {
                     employee.isFillingTeapot = true;
